@@ -3,8 +3,9 @@ import Switch from "react-switch";
 import "./App.css";
 
 const App = () => {
-  const [light1, setLight1] = useState(true);
-  const [light2, setLight2] = useState(true);
+  let [light1, setLight1] = useState(true);
+  let [light2, setLight2] = useState(true);
+  let [temperature, setTemperature] = useState(22);
   return (
     <div>
       <div className={`room ${light1 && light2 ? "white" : "black"}`}>
@@ -23,6 +24,11 @@ const App = () => {
           width={48}
           id="material-switch"
         />
+      </div>
+      <div className={`room ${light1 && light2 ? "white" : "black"}`}>
+        <span>Temperture Now {temperature} Celsius</span>
+        <button onClick={() => setTemperature(++temperature)}>+</button>
+        <button onClick={() => setTemperature(--temperature)}>-</button>
       </div>
       <div className={`room ${light1 && light2 ? "white" : "black"}`}>
         <Switch
