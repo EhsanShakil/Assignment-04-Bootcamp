@@ -4,7 +4,7 @@ body {
   padding: 0px;
 }
 .room {
-  height: 50vh;
+  height: 100vh;
 }
 
 .white {
@@ -16,10 +16,19 @@ body {
 .black1 {
   background-color: pink;
 }
-/* .switchbutton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-} */
+.colorwhite {
+  color: white;
+}
+.colorblack {
+  color: black;
+}
+.plus {
+  background-color: #68c250;
+  border-radius: 50px;
+  width: 50px;
+}
+.minus {
+  background-color: #e73b3b;
+  border-radius: 50px;
+  width: 50px;
+}
