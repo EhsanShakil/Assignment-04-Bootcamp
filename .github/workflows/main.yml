@@ -38,4 +38,4 @@ jobs:
       run: npm install --global surge
       
     - name: Run Surge
-      run: surge ./build assignment-04-bootcamp.surge.sh// --token ${{secrets.ASSIGNMENT_04_BOOTCAMP}}
+      run: surge ./build assignment-04-bootcamp.surge.sh/ --token ${{secrets.ASSIGNMENT_04_BOOTCAMP}}
